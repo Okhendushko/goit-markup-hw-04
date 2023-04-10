@@ -224,6 +224,7 @@ border-bottom: 1px solid #e7e9fc;
 
 .sub-text {
   font-size: 16px;
+  margin-bottom: 8px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
@@ -278,8 +279,8 @@ border-bottom: 1px solid #e7e9fc;
 }
 
 .font-card {
-padding-top: 32px;
-padding-bottom: 32px;
+text-align: center;
+    padding: 32px 16px;
 }
 .font-team {
   display: flex;
@@ -294,24 +295,33 @@ padding-bottom: 32px;
 .font-social {
 display: flex;
 justify-content: center;
-gap: 10px;
+gap: 24px;
 }
 
-.font-social-team {
+/*.font-social-team {
 width: 44px;
 height: 44px;
-}
+}*/
 
 .font-social-link {
-width: 100%;
-height: 100%;
+width: 40px;
+height: 40px;
 border-radius: 50%;
-background-color: aqua;
-display: inline-block;
+background-color:var(--primary-brand-color);
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.font-social-icon {
+.font-social-link:hover {
+  background-color: var(--pressed-state-color);
+} 
 
+
+
+
+.font-social-icon {
+fill: var(--light-color)
 }
 
 /*--------------FOOTER--------------*/
@@ -319,6 +329,14 @@ display: inline-block;
 .footer {
     padding: 100px 0;
 }
+
+ .footer-box {
+  display: flex;
+ }
+
+ .logo-box {
+   margin-right: 120px;
+ }
 
 .logo-page-footer{
 
@@ -347,6 +365,15 @@ display: inline-block;
 
 .text-logo-footer {
   color: var(--light-color);
+}
+
+.title-social {
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    margin-bottom: 16px;
 }
 
 /*---------------FOOTER-------------*/
